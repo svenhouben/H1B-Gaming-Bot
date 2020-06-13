@@ -36,13 +36,13 @@ fs.readdir("./commands/", (err, files) => {
 
 client.on('guildMemberAdd', member =>{
 
-    var role = member.guild.roles.cache.get('720334448578789386');
+    var role = member.guild.roles.cache.get('669911719266484244');
 
     if(!role) return;
 
     member.roles.add(role);
 
-    var channel = member.guild.channels.cache.get('720321243366031411');
+    var channel = member.guild.channels.cache.get('720301883377320008');
 
     if(!channel) return;
 
