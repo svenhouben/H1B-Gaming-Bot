@@ -63,7 +63,7 @@ client.on("ready", async () => {
 
 client.on("message", async message => {
 
-    if channel === 720205206654287913 then return
+    if (channel === 720205206654287913) return
 
     if (message.author.bot) return;
 
