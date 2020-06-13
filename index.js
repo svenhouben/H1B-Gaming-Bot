@@ -82,4 +82,4 @@ client.on("message", async message => {
 
 });
 
-client.login(poscess.env.token);
+client.login(process.env.token);
