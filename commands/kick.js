@@ -16,6 +16,8 @@ module.exports.run = async (client, message, arguments) => {
 
     if (!kickUser) return message.reply("Gebruiker niet gevonden!");
 
+    if (kickUser.hasPermission("KICK_MEMBERS")) return message.reply("Sorry je kunt deze gebruiker niet kicken!");
+
     var embedPrompt = new discord.MessageEmbed()
         .setColor("GREEN")
         .setTitle("Gelieve binnen 30 sec te bevestigen")

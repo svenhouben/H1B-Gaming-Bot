@@ -16,6 +16,8 @@ module.exports.run = async (client, message, arguments) => {
 
     if (!banUser) return message.reply("Gebruiker niet gevonden!");
 
+    if (warnUser.hasPermission("BAN_MEMBERS")) return message.reply("Sorry je kunt deze gebruiker niet bannen!");
+
     var embedPrompt = new discord.MessageEmbed()
         .setColor("GREEN")
         .setTitle("Gelieve binnen 30 sec te bevestigen")
